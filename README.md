@@ -1,6 +1,9 @@
 # Kuzhal-Flute
 
-This is an open-source app designed to teach and assist users in learning the flute. The app integrates different styles from various regions into one platform. This long-term project aims to benefit everyone, including experienced flutists (flautists).
+This is an open-source app designed to teach and assist users in learning the flute. The app integrates different styles from various regions into one platform. This long-term project aims to benefit everyone, including experienced flutists (flautists). 
+
+### Project name:
+குழல் (Kuzhal) - Flute
 
 ### Features
 - Interactive tutorials for beginners
