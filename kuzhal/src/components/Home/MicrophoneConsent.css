@@ -1,0 +1,94 @@
+.microphone-consent-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.microphone-consent-modal {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+}
+
+.microphone-consent-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--gray);
+  transition: var(--transition);
+}
+
+.microphone-consent-close:hover {
+  color: var(--text-color);
+}
+
+.microphone-consent-modal h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.microphone-consent-modal p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.microphone-consent-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.microphone-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.microphone-icon.success {
+  color: var(--success-color);
+}
+
+.microphone-icon.error {
+  color: var(--error-color);
+}
+
+.microphone-consent-success,
+.microphone-consent-error {
+  text-align: center;
+}
+
+.microphone-consent-error p {
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .microphone-consent-modal {
+    padding: 1.5rem;
+  }
+  
+  .microphone-consent-modal h2 {
+    font-size: 1.25rem;
+  }
+  
+  .microphone-consent-buttons {
+    flex-direction: column;
+  }
+}

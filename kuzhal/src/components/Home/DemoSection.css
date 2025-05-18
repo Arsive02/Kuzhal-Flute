@@ -1,0 +1,126 @@
+.demo-section {
+  background-color: var(--white);
+}
+
+.demo-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.demo-video {
+  display: flex;
+  justify-content: center;
+}
+
+.demo-video-placeholder {
+  width: 100%;
+  height: 350px;
+  background-color: var(--gray-light);
+  border-radius: var(--border-radius);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.demo-player {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demo-play-btn {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  color: var(--white);
+  border: none;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.demo-play-btn:hover {
+  background-color: #e68900;
+  transform: scale(1.05);
+}
+
+.demo-play-btn.playing {
+  background-color: var(--error-color);
+}
+
+.demo-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.demo-step {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.demo-step-number {
+  background-color: var(--primary-color);
+  color: var(--white);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.demo-step-content {
+  flex-grow: 1;
+}
+
+.demo-step-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-color);
+}
+
+.demo-step-content p {
+  color: var(--text-color);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .demo-video-placeholder {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .demo-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .demo-video-placeholder {
+    height: 250px;
+  }
+  
+  .demo-play-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 1.75rem;
+  }
+  
+  .demo-step-content h3 {
+    font-size: 1.1rem;
+  }
+}
